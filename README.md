@@ -21,6 +21,8 @@ namespace ConsoleApp1
             b3.l = b1.l + b2.l;
             b3.b = b1.b + b2.b;
             b3.h = b1.h + b2.h;
+            b1.vol = b1.l * b1.b * b1.h;
+            b2.vol = b2.l * b2.b * b2.h;
             b3.vol = b3.l * b3.b * b3.h;
             return b3;
         }
@@ -42,6 +44,11 @@ namespace ConsoleApp1
             b2.h = Convert.ToInt32(Console.ReadLine());
             box b4 = new box();
             b4 = b1 + b2;
+            Console.WriteLine("Volume of Box1");
+            Console.WriteLine(b1.vol);
+            Console.WriteLine("Volume of Box2");
+            Console.WriteLine(b2.vol);
+            Console.WriteLine("Volume of Box3");
             Console.WriteLine(b4.vol);
 
         }
