@@ -57,6 +57,6 @@ namespace ConsoleApp1
 ```
  
 ## Output:
- 
- 
+![01](https://user-images.githubusercontent.com/75235747/170472618-37dedf7c-c13d-47ac-a10f-8b05337de812.PNG)
+
 ## Result:
