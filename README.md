@@ -1,4 +1,6 @@
-# Operator-Overloading
+### EX NO : 06
+### DATE  : 12.05.2022
+# <p align="center">Operator-Overloading</p>
 
 ## Aim:
  To write a C# program to find the volume of a box using operator overloading
@@ -9,17 +11,15 @@
 3. After that return a new object for the calculated volume.
 4. Then create a new object to store the return object.
 5. After that print the calculated volume.
+
  
 ## Program:
 ```c#
 using System;
-namespace ConsoleApp1
-{
-    class box
-    {
+namespace ConsoleApp1{
+    class box{
         public int l, b, h,vol;
-        public static box operator+(box b1,box b2)
-        {
+        public static box operator+(box b1,box b2){
             box b3 = new box();
             b3.l = b1.l + b2.l;
             b3.b = b1.b + b2.b;
@@ -29,8 +29,7 @@ namespace ConsoleApp1
             b3.vol = b3.l * b3.b * b3.h;
             return b3;
         }
-        public static void Main()
-        {
+        public static void Main(){
             box b1 = new box();
             Console.WriteLine("Enter the Length of Box1");
             b1.l = Convert.ToInt32(Console.ReadLine());
@@ -53,12 +52,10 @@ namespace ConsoleApp1
             Console.WriteLine(b2.vol);
             Console.WriteLine("Volume of Box3");
             Console.WriteLine(b4.vol);
-
         }
     }
 }
 ```
- 
 ## Output:
 ![01](https://user-images.githubusercontent.com/75235747/170472618-37dedf7c-c13d-47ac-a10f-8b05337de812.PNG)
 
